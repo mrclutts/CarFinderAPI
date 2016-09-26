@@ -1,0 +1,390 @@
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+  
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sans", sans-serif!important;
+}
+
+.topnav {
+    font-size: 14px; 
+}
+
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #42dca3;
+    color: #42dca3;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #42dca3;
+    outline: 0;
+    color: #000;
+    background-color: #42dca3;
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 150px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #000000;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background-image: url('../Img/Tesla-Model-S-Blue.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 6em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+.carstyle {
+    color: #000000;
+    font-size: 20px;
+}
+#search select {
+    min-width: 100px;
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+#search {
+    background-image: url('../Img/imageedit_5_3395189549.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 1000px;
+}
+#search h3 {
+    color: #ffffff;
+    font-size: 2em;
+}
+#search .container {
+    padding-bottom: 50px;
+}
+.searchhead {
+    color: #ffffff;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+    padding-top: 50px;
+}
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+
+    margin-top: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background-image: url('../Img/ChapmansPass.PNG');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+    text-align:center;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+.bannerbutton {
+    text-align: center;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+#gallery .gallery-item {
+    margin: 0 0 15px;
+    right: 0
+}
+#gallery {
+    min-height: 800px;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+#gallery .gallery-item .gallery-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+#gallery .gallery-item .gallery-link .gallery-hover {
+    background-color: rgba(128, 128, 128, .7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s
+}
+#gallery .gallery-item .gallery-link .gallery-hover:hover {
+    opacity: 1
+}
+#gallery .gallery-item .gallery-link .gallery-hover .gallery-hover-content {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    top: 30%;
+    margin-top: -12px;
+    color: #fff
+}
+#gallery .gallery-item .gallery-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+}
+#gallery .intro-divider {
+
+}
+#technologies img {
+    height: 350px;
+    width: 350px;
+}
+
+#technologies span{
+    color: #A6120D;
+}
+#technologies span:hover {
+    color: #740C09;
+}
+#technologies a:hover {
+    text-decoration: none;
+    
+}
+#cartable {
+    font-size: 20px;
+}
+
+#cartable td {    
+    padding: 10px 0;
+    font-weight: normal;
+}
+
+#cartable tr:nth-child(even)	{
+  background-color: #C0C0C0;
+   
+}
+#cartable tr:nth-child(odd) {
+  background-color: #ffffff;
+ 
+}
+
+.searchhover:nth-child(odd):hover {
+ background-color: #337AB7!important;
+    color:black;
+}
+.searchhover:nth-child(even):hover	{
+ background-color: #337AB7!important;
+  color:black;
+   
+}
+
+
+.searchhover:nth-child(odd):hover button{
+  color:#000000;
+   
+}
+.searchhover:nth-child(even):hover button{
+    color:#000000;
+}
+
+
+.modal {
+    font-size: 20px;
+
+}
+.modal-header{
+    text-align:center;
+    font-size: 2em;
+}
+.modallist {
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+
+}
+.modallist li span{
+   font-size: 20px;
+}
+

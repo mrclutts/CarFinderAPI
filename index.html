@@ -1,0 +1,423 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Car Finder</title>
+    <link href="css/landing-page.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="Img/favicon-car.ico">
+    <link href="css/trNgGrid.min.css" rel="stylesheet" />
+    <link href="css/jquery.fancybox.css" rel="stylesheet" />
+    <link href="css/jquery.fancybox-buttons.css" rel="stylesheet" />
+    <link href="css/jquery.fancybox-thumbs.css" rel="stylesheet" />
+    <script src="Scripts/jquery.js"></script>
+    <script src="Scripts/jquery.fancybox.js"></script>
+    <script src="Scripts/jquery.fancybox-buttons.js"></script>
+    <script src="Scripts/jquery.fancybox-media.js"></script>
+    <script src="Scripts/jquery.fancybox-thumbs.js"></script>
+    <script src="Scripts/jquery.fancybox.pack.js"></script>
+    <script src="Scripts/jquery.mousewheel-3.0.6.pack.js"></script>  
+    <script src="Scripts/Scrolling.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap.min.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="CarController.js"></script>
+    <script src="Scripts/trNgGrid.min.js"></script>
+    <script src="Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script src="Scripts/jquery.easing.1.3.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fancybox").fancybox();
+        });
+    </script>
+</head>
+<body ng-app="CarFinder">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav navstyle" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav page-scroll" href="#home">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#gallery">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#search">Car Finder</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#technologies">Technologies</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <section id="home">
+        <div class="intro-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message">
+                            <h1>Car Finder</h1>
+                            <h3><a href="#search">Search</a> for your dream car!</h3>
+                            <hr class="intro-divider">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+
+        </div>
+    </section>
+    <!-- /.intro-header -->
+    <!--Dream Car Gallery-->
+    <section id="gallery">
+        <!-- Portfolio Grid Section -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Dream Car Gallery</h2>
+                    <hr class="intro-divider">
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12 gallery-item">
+                <a class="fancybox gallery-link" rel="gallery" href="Img/Cars/Subaru_forester.jpg">
+                    <div class="gallery-hover">
+                        <div class="gallery-hover-content">
+                            <h3>Subaru</h3>
+                            <h4>Forester</h4>
+                        </div>
+                    </div>
+                    <img src="Img/Cars/Subaru_forester.jpg" class="img-responsive" />
+                </a>
+            </div>
+            <div class="col-md-4 col-xs-12 gallery-item">
+                <a class="fancybox gallery-link" rel="gallery" href="Img/Cars/rollsroyce.jpg">
+                    <div class="gallery-hover">
+                        <div class="gallery-hover-content">
+                            <h3>Rolls Royce</h3>
+                            <h4>Phantom</h4>
+                        </div>
+                    </div>
+                    <img src="Img/Cars/rollsroyce.jpg" class="img-responsive" />
+                </a>
+            </div>
+            <div class="col-md-4 col-xs-12 gallery-item">
+                <a class="fancybox gallery-link" rel="gallery" href="Img/Cars/Tesla-Model-S.jpg">
+                    <div class="gallery-hover">
+                        <div class="gallery-hover-content">
+                            <h3>Tesla</h3>
+                            <h4>Model S</h4>
+
+                        </div>
+                    </div>
+                    <img src="Img/Cars/Tesla-Model-S.jpg" class="img-responsive" />
+                </a>
+            </div>
+
+            <div class="col-md-4 col-xs-12 gallery-item">
+                <a class="fancybox gallery-link" rel="gallery" href="Img/Cars/mercedes.PNG">
+                    <div class="gallery-hover">
+                        <div class="gallery-hover-content">
+                            <h3>Mercedes</h3>
+                            <h4>AMG GT</h4>
+                        </div>
+                    </div>
+                    <img src="Img/Cars/mercedes.PNG" class="img-responsive" />
+                </a>
+            </div>
+            <div class="col-md-4 col-xs-12 gallery-item">
+                <a class="fancybox gallery-link" rel="gallery" href="Img/Cars/range.PNG">
+                    <div class="gallery-hover">
+                        <div class="gallery-hover-content">
+                            <h3>Land Rover</h3>
+                            <h4>Range Rover</h4>
+                        </div>
+                    </div>
+                    <img src="Img/Cars/range.PNG" class="img-responsive" />
+                </a>
+            </div>
+            <div class="col-md-4 col-xs-12 gallery-item">
+                <a class="fancybox gallery-link" rel="gallery" href="Img/Cars/audia5.jpg">
+                    <div class="gallery-hover">
+                        <div class="gallery-hover-content">
+                            <h3>Audi</h3>
+                            <h4>A5</h4>
+                        </div>
+                    </div>
+                    <img src="Img/Cars/audia5.jpg" class="img-responsive" />
+                </a>
+            </div>
+        </div>
+ 
+    </section>
+    <!-- Search -->
+    <section id="search" ng-controller="CarController as car">
+        <div class="container  text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="searchhead">Find your Car!</h2>
+                    <hr class="intro-divider">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3>Year</h3>
+                <select class="carstyle" ng-model="car.options.year"
+                        ng-options="year for year in car.years"
+                        ng-change="car.getMakes()" 
+                        ng-init="car.options.year=0">
+                </select>
+            </div>
+            <div class="col-md-3">
+                <h3>Make</h3>
+                <select class="carstyle" ng-model="car.options.make"
+                        ng-options="make for make in car.makes"
+                        ng-change="car.getModels()">
+                </select>
+            </div>
+            <div class="col-md-3">
+                <h3>Model</h3>
+                <select class="carstyle" ng-model="car.options.model"
+                        ng-options="model for model in car.models"
+                        ng-change="car.getTrims()">
+                </select>
+            </div>
+            <div class="col-md-3">
+                <h3>Trim</h3>
+                <select class="carstyle" ng-model="car.options.trim"
+                        ng-options="trim for trim in car.trims"
+                        ng-change="car.getCars()">
+                </select>
+            </div>
+        </div>
+
+        <div class="container">
+            <table class="text-center" tr-ng-grid="" items="car.cars" fields="['model_year','make','model_name','model_trim', 'body_style']" page-items="10" id="cartable">
+                <thead class="searchtable">
+                    <tr>
+                        <th field-name="model_year" display-name="Year"></th>
+                        <th field-name="make" display-name="Make"></th>
+                        <th field-name="model_name" display-name="Model"></th>
+                        <th field-name="model_trim" display-name="Trim"></th>
+                        <th field-name="body_style" display-name="Body"></th>
+                        <th display-name="Get Info!" enable-filtering="false" enable-sorting="false"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="searchhover">
+                        <td><button ng-click="car.open(gridItem.id)">Info!</button></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       
+
+        <!-- /.container -->
+    </section>
+    <!-- Page Content -->
+    <section id="technologies">
+        <a name="services"></a>
+        <div class="content-section-a">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <h2 class="section-heading">Functionality built with AngularJS</h2>
+                        <h4><em>Powered by Google</em></h4>
+                        <hr class="section-heading-spacer"><br /><br />
+
+                        <div class="clearfix"></div>
+                        <p class="lead"><a href="https://en.wikipedia.org/wiki/AngularJS"> <span>AngularJS</span> </a> is is an open-source web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications. It aims to simplify both the development and the testing of such applications by providing a framework for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications.</p>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <img src="Img/AngularJS-Shield-large.png" class="img-responsive" />
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /.content-section-a -->
+        <div class="content-section-b">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-5 col-sm-6">
+                        <img src="Img/csharp.png" class="img-responsive" />
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <h2 class="section-heading">Back End Driven by C#</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+
+                        <p class="lead"><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"><span>C#</span></a> is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines. It was developed by Microsoft within its .NET initiative and later approved as a standard by Ecma and ISO. C# is one of the programming languages designed for the Common Language Infrastructure.  C# is a general-purpose, object-oriented programming language.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-section-a">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <h2 class="section-heading">Mark up powered by HTML5</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead"><a href="https://en.wikipedia.org/wiki/HTML5"><span>HTML5 </span></a> is a markup language used for structuring and presenting content on the World Wide Web. It was finalized, and published, on 28 October 2014 by the World Wide Web Consortium (W3C). This is the fifth revision of the HTML standard since the inception of the World Wide Web. The previous version, HTML 4, was standardized in 1997.</p>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <img src="Img/HTML5_Badge_512.png" class="img-responsive" />
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+
+        </div>
+
+        <!-- /.content-section-b -->
+
+        <div class="content-section-b">
+
+            <div class="container">
+
+                <div class="row">
+
+                    
+                 
+                    <div class="col-lg-5 col-sm-6">
+                        <img src="Img/css3_unofficial_shaped.png" class="img-responsive" />
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <h2 class="section-heading">Styled with CSS3</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+
+                        <p class="lead"><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3"><span>CSS3</span></a> is a style sheet language used for describing the presentation of a document written in a markup language.  Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+
+        </div>
+    </section>
+    <!-- /.content-section-a -->
+
+    <section id="contact">
+        <div class="banner">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>Contact Me</h2>
+                        <p class="bannerbutton"><a href="http://mclutts.azurewebsites.net/#contact" target="_blank" class="btn btn-default btn-lg"><span class="network-name">My Site</span></a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+
+        </div>
+    </section>
+    <!-- /.banner -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright text-muted small">Copyright &copy; Matthew Clutts 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!---MODAL-->
+    <script type="text/ng-template" id="carInfo.html">
+        <div class="modal-header">
+            <div>
+                <button class="btn btn-primary pull-right" ng-click="cm.cancel()">X</button>
+                <p><span class="text-uppercase">{{cm.cars.car.make}}</span> {{cm.cars.car.model_name}}</p>
+
+            </div>
+        </div>
+        <br />
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <img ng-src="{{cm.car.image}}" alt=" description" class="img-responsive" />
+                </div>
+                <div class="col-md-6">
+                    <p class="text-uppercase">Vehicle Information</p>
+                    <ul class="modallist">
+                        <li><strong>Make:</strong> {{cm.cars.car.make_display}}</li>
+                        <li><strong>Model:</strong> {{cm.cars.car.model_name}}</li>
+                        <li><strong>Trim:</strong> {{cm.cars.car.model_trim}}</li>
+                        <li><strong>Year:</strong> {{cm.cars.car.model_year}}</li>
+                        <li><strong>Body:</strong> {{cm.cars.car.body_style}}</li>
+                        <li><strong>Engine Position:</strong> {{cm.cars.car.engine_position}}</li>
+                        <li><strong>Engine Displacement:</strong> {{cm.cars.car.engine_cc}}</li>
+                        <li><strong>Number of Cylinders:</strong> {{cm.cars.car.engine_num_cyl}}</li>
+                        <li><strong>Engine Type:</strong> {{cm.cars.car.engine_type}}</li>
+                        <li><strong>Fuel:</strong> {{cm.cars.car.engine_fuel}}</li>
+                        <li><strong>Seats:</strong> {{cm.cars.car.seats}}</li>
+                        <li><strong>Doors:</strong> {{cm.cars.car.doors}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>Recalls: {{cm.cars.recalls.Count}}</p>
+                <uib-accordion close-others="oneAtATime">
+                    <uib-accordion-group heading="{{result.Component}}" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled" ng-repeat="result in cm.car.recalls.Results">
+                        <ul class="modallist">
+                            <li><span><strong>Manufacturer:</strong></span> {{result.Manufacturer}}</li>
+                            <li><span><strong>NHTSA Campaign Number:</strong></span> {{result.NHTSACampaignNumber}}</li>
+                            <li><span><strong>Report Date:</strong></span> {{result.ReportReceivedDate}}</li>
+                            <li><span><strong>Summary:</strong></span> {{result.Summary}}</li>
+                            <li><span><strong>Consequence:</strong></span> {{result.Conequence}}</li>
+                            <li><span><strong>Remedy: </strong></span> {{result.Remedy}}</li>
+                            <li><span><strong>Notes:</strong></span> {{result.Notes}}</li>
+                        </ul>
+                    </uib-accordion-group>
+                </uib-accordion>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary pull-right" ng-click="cm.cancel()">Close</button>
+        </div>
+
+    </script>
+
+
+</body>
+</html>
